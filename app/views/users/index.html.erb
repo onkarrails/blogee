@@ -1,0 +1,12 @@
+<% @page_title='Current Users' %>
+<%= content_tag('p', link_to('Back', :controller =>'staff', :action =>'menu')) %>
+
+<div class ="userlist left">
+    <%= render :partial=>'users/listing' %>
+</div>
+
+<div class ="userlist right">
+	Please select a useron the left or create a new user.
+ <%= link_to('new user' , :action => 'manage' )%>
+ </div>
+

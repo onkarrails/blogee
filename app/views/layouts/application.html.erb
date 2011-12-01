@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Simple Blog: <%= @page_title ||= 'Staff Area' %></title>
+		<meta name="author" content="Kedsdjdjsdnklkfdkdkdk;dffd." />
+		<%= stylesheet_link_tag('sblog', 'main',:media => "all") %>	
+  
+	</head>
+	<body class="public">
+		<div id="header">
+		    <h1><%= link_to('Simple Blog', '/',:style=>'text-decoration: none; color:#FFFFFF;') %> </h1>
+		</div>
+		<div id="pagecontent">
+		<%= flash[:notice] %>
+			<%= yield %>
+		</div>
+		<div id="footer">
+		</div>
+	</body>
+</html>
+		
+
+		
+		

@@ -1,0 +1,8 @@
+
+<% @page_title = 'New Post' -%>
+<%= content_tag('p', link_to('&laquo; Back', :action => 'list')) %>
+
+
+	<%= render :partial => 'posts/form'%>
+	<%= submit_tag("Create") %>
+

@@ -1,0 +1,16 @@
+// Place all the styles related to the Staff controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.menu { margin-left: 373px; margin-top: 3em; }
+
+
+.userlist { hieght: 40em; margin: 0 0 3em 10px; }
+.userlist.listing { border:1px solid #000000; hieght: 40em; }
+.userlist.left{ float: left; width: 480px; }
+.userlist.right { float: right; width: 430px; }
+
+.comment { padding: .5em 1em .5em 1em; }
+.comment-lead  { font-size: .75em; }
+.comment-text { padding: .5em .5em 1em .5em; }

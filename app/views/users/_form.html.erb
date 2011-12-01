@@ -1,0 +1,30 @@
+<%= form_tag :controller => "users", :action => "manage" do %>
+
+<table>
+  <tr>
+		<th>First Name</th>
+		<td><%= text_field :user, :first_name%></td>
+	</tr>
+	<tr>
+		<th>Last Name</th>
+		<td><%= text_field :user,:last_name%></td>
+	</tr>
+
+	<tr>
+		<th>UserName</th>
+		<td><%= text_field :user, :username%></td>
+	</tr>
+	<tr>
+		<th>Password</th>
+		<td><%= password_field :user, :hashed_password%></td>
+	</tr>
+	<tr>
+		<th>User Level</th>
+		<td><%= select(:user, :user_level, (0..9).to_a.reverse) %></td>
+	</tr>
+	</table>
+
+  <div class="actions">
+    <%= submit_tag "save" %>
+  </div>
+<% end %>

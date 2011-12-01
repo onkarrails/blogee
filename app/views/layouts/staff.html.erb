@@ -1,0 +1,21 @@
+ <html>
+	<head>
+		<title>Simple Blog: <%= @page_title ||= 'Staff Area' %></title>
+		<meta name="author" content="Kedsdjdjsdnklkfdkdkdk;dffd." />
+		<%= stylesheet_link_tag('sblog','staff', :media => "all") %>
+	</head>
+	<body class="staff">
+		<div id="header">
+			<h1>Simple Blog: Staff Area</h1>
+		</div>
+		<div id="pagecontent">
+			<%= flash[:notice] %>
+			<h1><%= @page_title %></h1>
+			<%= "<div class=\"notice\">#{flash[:notice]}</div>" if flash[:notice] %>
+			<%= yield %>
+		</div>
+		<div id="footer">
+			<p>This is footer in staff layout</p>
+		</div>
+	</body>
+</html>
